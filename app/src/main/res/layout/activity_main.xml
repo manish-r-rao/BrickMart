@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_screen"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/custom_button"
+        android:text="BUY"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/sell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caption2" />
+
+    <Button
+        android:id="@+id/sell"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/custom_button"
+        android:text="SELL"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/myitems"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buy" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:fontFamily="@font/agbalumo"
+        android:text="BRICKMART"
+        android:textColor="#CDDC39"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/caption1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/caption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/alegreya_sc"
+        android:text="Resell ur construction "
+        android:textColor="@color/material_dynamic_neutral90"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/caption2"
+        app:layout_constraintStart_toStartOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/caption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="47dp"
+        android:fontFamily="@font/alegreya_sc"
+        android:text="materials here!"
+        android:textColor="@color/material_dynamic_neutral90"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buy"
+        app:layout_constraintEnd_toEndOf="@+id/caption1"
+        app:layout_constraintTop_toBottomOf="@+id/caption1" />
+
+    <Button
+        android:id="@+id/myitems"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/custom_button"
+        android:text="MY ITEMS"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sell" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

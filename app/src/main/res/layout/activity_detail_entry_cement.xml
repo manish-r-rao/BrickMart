@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_screen"
+    tools:context=".DetailEntryCement">
+
+    <EditText
+        android:id="@+id/cname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="Enter name"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/material_dynamic_neutral70"
+        app:layout_constraintBottom_toTopOf="@+id/cphone"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/cnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="Enter number of bags"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/material_dynamic_neutral70"
+        app:layout_constraintBottom_toTopOf="@+id/cprice"
+        app:layout_constraintEnd_toEndOf="@+id/cphone"
+        app:layout_constraintTop_toBottomOf="@+id/cphone" />
+
+    <EditText
+        android:id="@+id/cphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:hint="Enter phone number"
+        android:inputType="phone"
+        android:textColor="@color/white"
+        android:textColorHint="@color/material_dynamic_neutral70"
+        app:layout_constraintBottom_toTopOf="@+id/cnumber"
+        app:layout_constraintStart_toStartOf="@+id/cname"
+        app:layout_constraintTop_toBottomOf="@+id/cname" />
+
+    <EditText
+        android:id="@+id/cprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="Enter price per bag"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/material_dynamic_neutral70"
+        app:layout_constraintBottom_toTopOf="@+id/ccompany"
+        app:layout_constraintStart_toStartOf="@+id/cnumber"
+        app:layout_constraintTop_toBottomOf="@+id/cnumber" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="70dp"
+
+        android:background="@drawable/onlystroke"
+        android:fontFamily="monospace"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpincode" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/alegreya_sc"
+        android:text="Enter details"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/cname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ccompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Enter company name"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/material_dynamic_neutral70"
+        app:layout_constraintBottom_toTopOf="@+id/cdistrict"
+        app:layout_constraintStart_toStartOf="@+id/cprice"
+        app:layout_constraintTop_toBottomOf="@+id/cprice" />
+
+    <EditText
+        android:id="@+id/cdistrict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="Enter district"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/material_dynamic_neutral70"
+        app:layout_constraintBottom_toTopOf="@+id/cpincode"
+        app:layout_constraintEnd_toEndOf="@+id/ccompany"
+        app:layout_constraintTop_toBottomOf="@+id/ccompany" />
+
+    <EditText
+        android:id="@+id/cpincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Enter pincode"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/material_dynamic_neutral70"
+        app:layout_constraintBottom_toTopOf="@+id/Submit"
+        app:layout_constraintStart_toStartOf="@+id/cdistrict"
+        app:layout_constraintTop_toBottomOf="@+id/cdistrict" />
+</androidx.constraintlayout.widget.ConstraintLayout>

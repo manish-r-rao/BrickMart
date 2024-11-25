@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_screen"
+    tools:context=".DetailEntryPaint">
+
+    <EditText
+        android:id="@+id/cname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="Enter name"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/material_dynamic_neutral70"
+        app:layout_constraintBottom_toTopOf="@+id/cphone"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/cnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Enter quantity in Litres"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/material_dynamic_neutral70"
+        app:layout_constraintBottom_toTopOf="@+id/cprice"
+        app:layout_constraintStart_toStartOf="@+id/cphone"
+        app:layout_constraintTop_toBottomOf="@+id/cphone" />
+
+    <EditText
+        android:id="@+id/cphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Enter phone number"
+        android:inputType="phone"
+        android:textColor="#E6E1E1"
+        android:textColorHint="@color/material_dynamic_neutral70"
+        app:layout_constraintBottom_toTopOf="@+id/cnumber"
+        app:layout_constraintStart_toStartOf="@+id/cname"
+        app:layout_constraintTop_toBottomOf="@+id/cname" />
+
+    <EditText
+        android:id="@+id/cprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Enter price"
+        android:inputType="text"
+        android:textColor="#F4F2F2"
+        android:textColorHint="@color/material_dynamic_neutral70"
+        app:layout_constraintBottom_toTopOf="@+id/ccompany"
+        app:layout_constraintStart_toStartOf="@+id/cnumber"
+        app:layout_constraintTop_toBottomOf="@+id/cnumber" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/onlystroke"
+        android:fontFamily="monospace"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ppin" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/alegreya_sc"
+        android:text="Enter details"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/cname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ccompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Enter company name"
+        android:inputType="text"
+        android:textColor="#F0E8E8"
+        android:textColorHint="@color/material_dynamic_neutral70"
+        app:layout_constraintBottom_toTopOf="@+id/ccolor"
+        app:layout_constraintStart_toStartOf="@+id/cprice"
+        app:layout_constraintTop_toBottomOf="@+id/cprice" />
+
+    <EditText
+        android:id="@+id/ccolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Enter color"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/material_dynamic_neutral70"
+        app:layout_constraintBottom_toTopOf="@+id/pdistrict"
+        app:layout_constraintStart_toStartOf="@+id/ccompany"
+        app:layout_constraintTop_toBottomOf="@+id/ccompany" />
+
+    <EditText
+        android:id="@+id/pdistrict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Enter District"
+        android:inputType="text"
+        android:textColor="#F4EEEE"
+        android:textColorHint="@color/material_dynamic_neutral70"
+        app:layout_constraintBottom_toTopOf="@+id/ppin"
+        app:layout_constraintStart_toStartOf="@+id/ccolor"
+        app:layout_constraintTop_toBottomOf="@+id/ccolor" />
+
+    <EditText
+        android:id="@+id/ppin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="Enter pincode"
+        android:inputType="text"
+        android:textColor="#F0E8E8"
+        android:textColorHint="@color/material_dynamic_neutral70"
+        app:layout_constraintBottom_toTopOf="@+id/Submit"
+        app:layout_constraintStart_toStartOf="@+id/pdistrict"
+        app:layout_constraintTop_toBottomOf="@+id/pdistrict" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
