@@ -3,3 +3,8 @@
 ![image_alt](https://github.com/manish-r-rao/BrickMart/blob/db2430bf1e0de11943a0eb37521d2c8d9ce4920f/MainPage.jpg)
 ![image_alt](https://github.com/manish-r-rao/BrickMart/blob/eebbe5852b4db91f9bfbbd1b30a23d0cda024528/Sell.jpg)
 ![image_alt](https://github.com/manish-r-rao/BrickMart/blob/458c265074e59c248b8bc0912f0aebb13241203c/CementSell.jpg)
+![image_alt](https://github.com/manish-r-rao/BrickMart/blob/09deb82fb72877987f6b3a49ff12783b34ebdc51/Buy.jpg)
+![image_alt](https://github.com/manish-r-rao/BrickMart/blob/09deb82fb72877987f6b3a49ff12783b34ebdc51/CementBuy.jpg)
+![image_alt](https://github.com/manish-r-rao/BrickMart/blob/09deb82fb72877987f6b3a49ff12783b34ebdc51/BrickBuy.jpg)
+![image_alt](https://github.com/manish-r-rao/BrickMart/blob/09deb82fb72877987f6b3a49ff12783b34ebdc51/MyItems.jpg)
+![image_alt](https://github.com/manish-r-rao/BrickMart/blob/09deb82fb72877987f6b3a49ff12783b34ebdc51/DeleteMyItems.jpg)
